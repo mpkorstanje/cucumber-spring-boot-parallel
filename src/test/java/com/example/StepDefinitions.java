@@ -19,6 +19,5 @@ public class StepDefinitions {
     public void anApplicationContext() {
         assertNotNull(applicationContext);
         assertNotNull(testComponent);
-        System.out.println("Test component=" + testComponent.toString());
     }
 }

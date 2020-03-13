@@ -1,6 +1,6 @@
 Feature: Spring Boot
 
-  Scenario Outline: The application context starts
+  Scenario Outline: The application context starts <iteration>
     Given an application context
 
     Examples:
