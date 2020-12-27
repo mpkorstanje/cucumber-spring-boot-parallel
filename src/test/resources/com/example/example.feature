@@ -1,5 +1,9 @@
 Feature: Spring Boot
 
+  @isolated
+  Scenario: An isolated scenario
+    Given an application context in isolation
+
   Scenario Outline: The application context starts
     Given an application context
 
