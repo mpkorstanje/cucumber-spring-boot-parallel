@@ -18,7 +18,7 @@ public class StepDefinitions {
     public void anApplicationContext() throws InterruptedException {
         assertNotNull(applicationContext);
         assertNotNull(testComponent);
-        System.out.println("Test component=" + testComponent);
+        System.out.println("Test component=" + testComponent.getUuid());
         Thread.sleep(20);
     }
     @Given("an application context in isolation")
@@ -27,7 +27,7 @@ public class StepDefinitions {
         System.out.flush();
         assertNotNull(applicationContext);
         assertNotNull(testComponent);
-        System.out.println("Test component=" + testComponent);
+        System.out.println("Test component=" + testComponent.getUuid());
         Thread.sleep(2000);
         System.out.println("END ISOLATION");
         System.out.flush();
