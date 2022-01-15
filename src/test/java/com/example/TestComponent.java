@@ -1,11 +1,9 @@
 package com.example;
 
-import org.springframework.context.annotation.Scope;
+import io.cucumber.spring.ScenarioScope;
 import org.springframework.stereotype.Component;
 
-import static io.cucumber.spring.CucumberTestContext.SCOPE_CUCUMBER_GLUE;
-
 @Component
-@Scope(SCOPE_CUCUMBER_GLUE)
+@ScenarioScope
 public class TestComponent {
 }

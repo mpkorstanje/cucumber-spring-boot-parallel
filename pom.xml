@@ -17,16 +17,22 @@
 
     <properties>
         <java.version>11</java.version>
-        <cucumber.version>6.9.0</cucumber.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>5.8.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>io.cucumber</groupId>
-                <artifactId>cucumber-jvm</artifactId>
-                <version>${cucumber.version}</version>
+                <artifactId>cucumber-bom</artifactId>
+                <version>7.2.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -60,10 +66,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 </project>
